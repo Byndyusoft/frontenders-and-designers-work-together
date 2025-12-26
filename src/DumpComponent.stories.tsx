@@ -1,20 +1,21 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { DumpComponent } from './DumpComponent';
+import { MyCalendar } from './calendar/calendar';
 
 const meta = {
     title: 'Пример истории',
-    component: DumpComponent,
+    component: MyCalendar,
     parameters: {
         backgrounds: {
             default: 'dark'
         }
     }
-} satisfies Meta<typeof DumpComponent>;
+} satisfies Meta<typeof MyCalendar>;
 
-type TStory = StoryObj<typeof DumpComponent>;
+type TStory = StoryObj<typeof MyCalendar>;
 
-export const Basic: TStory = {};
+export const calendar: TStory = {};
 
-Basic.storyName = 'Dump';
+calendar.storyName = 'Dump';
 
 export default meta;
